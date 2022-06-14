@@ -29,11 +29,7 @@
 .imagecon img{
     height: 17%;
     width: 17%;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+
 }
 
 .container nav{
