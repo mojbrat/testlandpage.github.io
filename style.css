@@ -55,7 +55,7 @@
     font-size: 0.9vw;
 }
 
-nav ul li{
+.container nav ul li{
     display: inline-block;
     margin: 0 2%;
 }
