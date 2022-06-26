@@ -18,10 +18,10 @@
 
 .imagecon{
     position: absolute;
-    margin: -2.8% 39.5%;
+    margin: 0.1% 38.5%; /*-2.8 39.5*/
     z-index: 1;
-    height: 17%;
-    width: 17%;
+    height: 5.5%; /*13*/
+    width: 18%;
     z-index: 2;
 }
 
@@ -73,4 +73,23 @@
     height: 100%;
     background-color: black;
     z-index: -1;
+}
+
+.aboutmain{
+    position: absolute;
+    top: 37.5%;
+    left: 9%;
+    width: 80%;
+}
+
+.aboutmain li{
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 0.9vw;
+    list-style: none;
+}
+
+.aboutmain li p{
+    padding: 3% 1px 0;
 }

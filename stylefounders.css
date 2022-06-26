@@ -7,12 +7,12 @@
 
 .list{
     width: 100%;
-    height: 6%; /*menja topbar navbar duzinu... navbara...*/
+    height: 7%;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     top: 15.5%;
-    left: 15.45%;
+    left: 7.5%;
 }
 
 .list nav{
@@ -50,10 +50,10 @@
 
 .imagecon{
     position: absolute;
-    margin: -2.8% 39.5%;
+    margin: 0.1% 38.5%; /*-2.8 39.5*/
     z-index: 1;
-    height: 17%;
-    width: 17%;
+    height: 5.5%; /*13*/
+    width: 18%;
     z-index: 2;
 }
 
@@ -105,4 +105,13 @@
     height: 100%;
     background-color: black;
     z-index: -1;
+}
+
+.list nav ul li p{
+    padding: 1%;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.8vw;
+    color: gray;
 }

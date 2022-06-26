@@ -18,10 +18,10 @@
 
 .imagecon{
     position: absolute;
-    margin: -2.8% 39.5%;
+    margin: 0.1% 38.5%; /*-2.8 39.5*/
     z-index: 1;
-    height: 17%;
-    width: 17%;
+    height: 5.5%; /*13*/
+    width: 18%;
     z-index: 2;
 }
 
