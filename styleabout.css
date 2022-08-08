@@ -43,14 +43,12 @@
     flex-wrap: wrap;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -65.75%;
     z-index: 1;
 }
 
 .containerL nav{
     width: 100%;
-    position: relative;
-    height: 100%;
     /*background: rgb(12,12,12);*/
     /*background: linear-gradient(90deg, rgba(12,12,12,1) 45%, rgba(7,242,145,1) 62%);*/
 }
@@ -59,7 +57,7 @@
     position: relative;
     right: 9px;
     flex: 1;
-    text-align: left;
+    text-align: right;
     margin-top: 1%;
     font-family: montserrat, sans-serif;
     font-weight: 500;
