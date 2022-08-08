@@ -50,7 +50,7 @@
 
 .imagecon{
     position: absolute;
-    margin: 0.1% 38.5%; /*-2.8 39.5*/
+    margin: 0.1% 39.5%; /*-2.8 39.5*/
     z-index: 1;
     height: 5.5%; /*13*/
     width: 18%;
@@ -67,12 +67,53 @@
     -ms-user-select: none;
 }
 
+/**/
+.containerL{
+    width: 100%;
+    height: 6%; /*menja topbar navbar duzinu... navbara... lool*/
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: -65.75%;
+    z-index: 1;
+}
+
+.containerL nav{
+    width: 100%;
+    /*background: rgb(12,12,12);*/
+    /*background: linear-gradient(90deg, rgba(12,12,12,1) 45%, rgba(7,242,145,1) 62%);*/
+}
+
+.containerL nav ul{
+    position: relative;
+    right: 9px;
+    flex: 1;
+    text-align: right;
+    margin-top: 1%;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.9vw;
+}
+
+.containerL nav ul li{
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.containerL nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+/**/
+
 .container nav{
     width: 100%;
     position: relative;
     height: 100%;
-   /* background: rgb(12,12,12);*/
-   background:#f2b3bd;
+    /* background: rgb(12,12,12);*/
+    background:#f2b3bd;
     /*background: linear-gradient(90deg, rgba(12,12,12,1) 45%, rgba(7,242,145,1) 62%);*/
 }
 
