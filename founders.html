@@ -35,7 +35,7 @@
         <a href="index.html"><img src="pictures/logo.png" alt=""></a>
     </div>
 
-    <div class="list">
+    <!--<div class="list">
         <nav>
             <ul>
                 <li>Pleksa<p>CO-FOUNDER & ARTIST</p>
@@ -43,10 +43,83 @@
                 <li>Jovan<p>CO-FOUNDER & PROGRAMMER</p>
             </ul>
         </nav>
+    </div>-->
+
+    <div class="list">
+        <button onClick="reply_click(this.id)" id="dav" class="david">BEAMBUNNY
+            <p>FOUNDER & MANAGER</p>
+        </button>
+        <button onClick="reply_click(this.id)" id="ple" class="pleksa">Pleksa
+            <p>CO-FOUNDER & ARTIST</p>
+        </button>
+        <button onClick="reply_click(this.id)" id="jov" class="jovan">Jovan
+            <p>CO-FOUNDER & PROGRAMMER</p>
+        </button>
+    </div>
+
+    <p class="overview">Select a team member below to read about them.</p>
+
+    <div class="desc">
+        <p class="opis" id="opis"></p>
     </div>
 
     <div class="background">
 
     </div>
 </body>
+<script>
+    d = false;
+    p = false;
+    j = false;
+    
+    function reply_click(clicked_id){ 
+        //document.getElementById('opis').style.animation = "pz 4.7s ease-out";
+
+        let res1 = document.querySelector("#dav");
+        let res2 = document.querySelector("#ple");
+        let res3 = document.querySelector("#jov");
+
+        res1.addEventListener("click", restartAnimation, true);
+        res2.addEventListener("click", restartAnimation, true);
+        res3.addEventListener("click", restartAnimation, true);
+
+        function restartAnimation(event){
+            document.getElementById("opis").style.animationName = "none";
+
+            requestAnimationFrame(() => {
+                document.getElementById("opis").style.animationName = "";
+            });
+        }
+
+        if(clicked_id == "dav"){
+            document.getElementById(clicked_id).style.borderColor = "#ffc0cb";
+            d = true;
+            p = false;
+            document.getElementById("ple").style.borderColor = null;
+            j = false;
+            document.getElementById("jov").style.borderColor = null;
+
+
+            document.getElementById('opis').innerHTML = "Mastermind, Founder of the project and Elf Girl enthusiast. BeamBunny became working with NFTs in summer of 2021, with him owning Bored & Mutant Apes, CryptoPunks and other expensive projects, he is the main manager of the project. BEAMBUNNY, with his promotion skills, also works as projects promoter to make the project succeed in its best way. Beam works as a professional wrestling promoter for Golden Wrestling Federation and Tim Madison Promotions, Inc., he is the master of promoting. A martial arts enthusiast also with money on his mind. His idea of ``Elf Girl Fantasy World`` came from his weeb mind during his run as (failed) manga creator, he decided to gather the best programmer and artist from his hometown (Shporet and Jovan) and decided to make the best NFT project he can. He is the craziest of the three, he has the most creativity and the perfect mind for anything japan-related. He is an elf enthusiast. (sie/nem, twitter.com/beambunny)";
+        }else if(clicked_id == "ple"){
+            document.getElementById(clicked_id).style.borderColor = "#ffc0cb";
+            d = false;
+            document.getElementById("dav").style.borderColor = null;
+            p = true;
+            j = false;
+            document.getElementById("jov").style.borderColor = null;
+
+            document.getElementById('opis').innerHTML = "bye";
+        }else if(clicked_id == "jov"){
+            document.getElementById(clicked_id).style.borderColor = "#ffc0cb";
+            d = false;
+            document.getElementById("dav").style.borderColor = null;
+            p = false;
+            document.getElementById("ple").style.borderColor = null;
+            j = true;
+
+            document.getElementById('opis').innerHTML = "why";
+        }
+    }
+</script>
 </html>
