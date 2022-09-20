@@ -116,3 +116,14 @@
     background-color: #121212;
     z-index: -1;
 }
+
+@media only screen and (max-width: 1200px) {
+    .container {
+      height: 35px;
+    }
+
+    .imagecon{
+        height: 7%;
+        width: 20%;
+    }
+}

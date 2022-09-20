@@ -135,3 +135,14 @@
 .aboutmain li p{
     padding: 3% 1px 0;
 }
+
+@media only screen and (max-width: 1200px) {
+    .container {
+      height: 35px;
+    }
+
+    .imagecon{
+        height: 7%;
+        width: 20%;
+    }
+}
