@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    box-sizing: border-box;
+
 }
 
 .list{
@@ -10,29 +10,27 @@
     height: 100%;
     min-width: 1500px;
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
     flex-direction: column;
-    top: 15.5%;
+    justify-content: center;
     left: 5.5%;
-    padding: 10px;
 }
 
 /**/
 
 .david{
     width: 20%;
-    height: 12.5%;
-    background-color: black;
+    height: 9vh;
+    background-color: #121212;
     color: white;
-    border-color: black;
+    border-color: #121212;
     border-radius: 7px;
     border-style: solid;
     transition: border-color 0.5s;
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-size: 24px;
-    margin: 50px 0px;
+    margin: 6vh 0px;
 }
 
 .david p{
@@ -58,17 +56,17 @@
 
 .pleksa{
     width: 20%;
-    height: 12.5%;
-    background-color: black;
+    height: 9vh;
+    background-color: #121212;
     color: white;
-    border-color: black;
+    border-color: #121212;
     border-radius: 7px;
     border-style: solid;
     transition: border-color 0.5s;
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-size: 24px;
-    margin: 50px 0px;
+    margin: 6vh 0px;
 }
 
 .pleksa p{
@@ -94,17 +92,17 @@
 
 .jovan{
     width: 20%;
-    height: 12.5%;
-    background-color: black;
+    height: 9vh;
+    background-color: #121212;
     color: white;
-    border-color: black;
+    border-color: #121212;
     border-radius: 7px;
     border-style: solid;
     transition: border-color 0.5s;
     font-family: montserrat, sans-serif;
     font-weight: 500;
     font-size: 24px;
-    margin: 50px 0px;
+    margin: 6vh 0px;
 }
 
 .jovan p{
@@ -149,110 +147,63 @@
 }*/
 
 .container{
+    position: absolute;
     width: 100%;
-    height: 6%; /*menja topbar navbar duzinu... navbara... lool*/
+    height: 74px;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: pink;
 }
 
-.imagecon{
-    position: absolute;
-    margin: 0.1% 39.5%; /*-2.8 39.5*/
-    z-index: 1;
-    height: 5.5%; /*13*/
-    width: 18%;
-    z-index: 2;
+.first ul{
+    text-align: left;
+    margin-top: 1%;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.first ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.first ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.second ul{
+    text-align: right;
+    margin-top: 1%;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.second ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.second ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 .imagecon img{
-    height: 100%;
-    width: 100%;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-/**/
-.containerL{
-    width: 100%;
-    height: 6%; /*menja topbar navbar duzinu... navbara... lool*/
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: -65.75%;
-    z-index: 1;
-}
-
-.containerL nav{
-    width: 100%;
-    /*background: rgb(12,12,12);*/
-    /*background: linear-gradient(90deg, rgba(12,12,12,1) 45%, rgba(7,242,145,1) 62%);*/
-}
-
-.containerL nav ul{
-    position: relative;
-    right: 9px;
-    flex: 1;
-    text-align: right;
-    margin-top: 1%;
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 0.9vw;
-}
-
-.containerL nav ul li{
-    display: inline-block;
-    margin: 0 2%;
-}
-
-.containerL nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-/**/
-
-.container nav{
-    width: 100%;
-    position: relative;
-    height: 100%;
-    /* background: rgb(12,12,12);*/
-    background: #ffc0cb;
-    /*background: linear-gradient(90deg, rgba(12,12,12,1) 45%, rgba(7,242,145,1) 62%);*/
-}
-
-.container nav ul{
-    position: relative;
-    right: 9px;
-    flex: 1;
-    text-align: right;
-    margin-top: 1%;
-    font-family: montserrat, sans-serif;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 0.9vw;
-}
-
-.container nav ul li{
-    display: inline-block;
-    margin: 0 2%;
-}
-
-.container nav ul li a{
-    text-decoration: none;
-    color: black;
+    height: 60px;
+    width: 364px;
 }
 
 .background{
     position: absolute;
-    top: 6%;
+    top: 74px;
     right: 0%;
     width: 100%;
     height: 100%;
@@ -274,11 +225,18 @@
     width: 70%;
     font-family: montserrat, sans-serif;
     font-weight: 300;
-    font-size: 26px;
+    font-size: 3vh;
     word-wrap: break-word;
     text-align: center;
-    top: 35.5%;
-    left: 27%;
+    top: 50%; right: 37%;
+    transform: translate(50%,-50%);
+}
+
+.opis{
+    position: relative;
+    color: white;
+    transition: color 0.5s;
+    animation: 1.5s pz ease-out;
 }
 
 .overview{
@@ -286,15 +244,9 @@
     font-family: montserrat, sans-serif;
     font-weight: 300;
     font-size: 17px;
+    width: 422px;
     color: white;
-    top: 14.5%;
-    left: 5%;
-}
-
-.opis{
-    color: white;
-    transition: color 0.5s;
-    animation: 1.5s pz ease-out;
+    top: 20%;
 }
 
 @keyframes pz{
@@ -318,12 +270,71 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .container {
-      height: 35px;
+    .first ul li{
+        margin: 0 5%;
     }
 
-    .imagecon{
-        height: 7%;
-        width: 20%;
+    .second ul li{
+        margin: 0 5%;
+    }
+
+    .david{
+        height: 60px;
+        margin: 2vh 0;
+        margin-top: 70px;
+    }
+
+    .pleksa{
+        height: 60px;
+        margin: 2vh 0;
+    }
+
+    .jovan{
+        height: 60px;
+        margin: 2vh 0;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+    .first ul li{
+        margin: 0 11px;
+    }
+
+    .second ul li{
+        margin: 0 11px;
+    }
+
+    .david{
+        height: 60px;
+        margin-top: 70px;
+    }
+
+    .pleksa{
+        height: 60px;
+    }
+
+    .jovan{
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .first ul li{
+        margin: 0 20px;
+    }
+
+    .second ul li{
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .first ul li{
+        margin: 0 40px;
+    }
+
+    .second ul li{
+        margin: 0 40px;
     }
 }

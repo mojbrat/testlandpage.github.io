@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <nav>
+        <nav class="first">
             <ul>
                 <li><a href="founders.html">FOUNDERS</a>
                 <li><a href="roadmap.html">ROADMAP</a>
@@ -20,24 +20,24 @@
                 <li><a href="aboutus.html">ABOUT US</a>
             </ul>
         </nav>
-    </div>
 
-    <div class="containerL">
-        <nav>
+        <div class="imagecon">
+            <a href="index.html"><img src="pictures/logo.png" alt=""></a>
+        </div>
+
+        <nav class="second">
             <ul>
                 <li><a href="https://discord.gg/XPuEqaZN" target="_blank">DISCORD</a>
                 <li><a href="https://twitter.com/FantasyWorldELF" target="_blank">TWITTER</a>
-                <li><a href="projects.html">CONTACT</a>
+                <li><a href="Untitled-1.html">CONTACT</a>
                 <li><a href="aboutus.html">OPENSEA</a>
             </ul>
         </nav>
     </div>
 
-    <div class="imagecon">
-        <a href="index.html"><img src="pictures/logo.png" alt=""></a>
-    </div>
-
     <div class="list">
+        <p class="overview">Select a team member below to read about them.</p>
+
         <button onClick="reply_click(this.id)" id="dav" class="david">BEAMBUNNY
             <p>FOUNDER & MANAGER</p>
         </button>
@@ -48,8 +48,6 @@
             <p>CO-FOUNDER & PROGRAMMER</p>
         </button>
     </div>
-
-    <p class="overview">Select a team member below to read about them.</p>
 
     <div class="desc">
         <p class="opis" id="opis"></p>
@@ -79,7 +77,7 @@
                 document.getElementById("opis").style.animationName = "none";
 
                 requestAnimationFrame(() => {
-                document.getElementById("opis").style.animationName = "";
+                    document.getElementById("opis").style.animationName = "";
                 });
             }
         }
