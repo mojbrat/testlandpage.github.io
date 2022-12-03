@@ -1,29 +1,14 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: auto;
     background-color: black;
 }
 
-.bbot{
-    border-bottom: 1px solid white;
+html,
+body {
+  height: 100%
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 30px;
-}
-  
-::-webkit-scrollbar-track:hover {
-    background: #141414;
-    border-radius: 30px;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #f1f1f1;
-    border-radius: 30px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    border-radius: 30px;
+.bbot{
+    border-bottom: 1px white solid;
 }
